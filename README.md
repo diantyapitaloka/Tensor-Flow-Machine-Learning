@@ -1,5 +1,5 @@
 ## ⚡💧☃️ Tensor Flow Machine Learning ☃️💧⚡ 
-This dataset contains images of hand gestures from the Rock-Paper-Scissors game. The images were captured as part of a hobby project where I developped a Rock-Paper-Scissors game using computer vision and machine learning on the Raspberry Pi (https://github.com/DrGFreeman/rps-cv).
+This dataset contains images of hand gestures from the Rock-Paper-Scissors game. The images were captured as part of a hobby project where I developped a Rock-Paper-Scissors game using computer vision and machine learning on the Raspberry Pi
 
 Here are few images taken from the dataset:
 
