@@ -1,9 +1,8 @@
 ## ⚡💧☃️ Tensor Flow Machine Learning ☃️💧⚡ 
 This dataset contains images of hand gestures from the Rock-Paper-Scissors game. The images were captured as part of a hobby project where I developped a Rock-Paper-Scissors game using computer vision and machine learning on the Raspberry Pi
 
-Here are few images taken from the dataset:
+![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/f0b834a3-7dbb-46d7-8822-9c04fc18eba6)
 
-![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/1b92d61c-d940-49ac-aabb-5d6aa94afec5)
 
 ## ⚡💧☃️ Convolutional Neural Network (CNN) ☃️💧⚡ 
 
@@ -21,10 +20,33 @@ The dataset contains a total of 2188 images corresponding to the 'Rock' (726 ima
 ## ⚡💧☃️ Format ☃️💧⚡ 
 All images are RGB images of 300 pixels wide by 200 pixels high in .png format. The images are separated in three sub-folders named 'rock', 'paper' and 'scissors' according to their respective class.
 
-## ⚡💧☃️ L ☃️💧⚡ 
-## ⚡💧☃️ L ☃️💧⚡ 
-## ⚡💧☃️ L ☃️💧⚡ 
-## ⚡💧☃️ L ☃️💧⚡ 
+## ⚡💧☃️ Import Library and Download the Dataset ☃️💧⚡ 
+This project is created using TensorFlow, Numpy and Matplotlib among others. 
+
+Here are few images taken from the dataset:
+
+![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/1b92d61c-d940-49ac-aabb-5d6aa94afec5)
+
+## ⚡💧☃️ Image Augmentation using ImageDataGenerator ☃️💧⚡ 
+ImageDataGenerator is used for data train and data validation. We can use ImageDataGenerator for data preprocessing, separating train and validation data, and image Augmentation. **Image Augmentation** is a technique to increase the volume of data train by duplicating the data with various parameter.
+
+## ⚡💧☃️ Create CNN Model and Model Training ☃️💧⚡ 
+For CNN model, we will define the convolutional layer and Pooling layer. We also create callbacks to stop training process when desired model accuracy is achieved.
+
+## ⚡💧☃️ Model Evaluation ☃️💧⚡ 
+We use accuracy for our metrics. 
+| Metrics | Training Score | Validation Score |
+| --- | --- | --- |
+| Accuracy | 0,9700 | 1,000 |
+| Loss | 0,0950 | 0,0376 |
+
+## ⚡💧☃️ Recommendation ☃️💧⚡ 
+Various technique could be used to increase the accuracy and decrease the loss of the model. Some suggestion are:
+- Transfer Learning using VGG16, ResNet and AlexNet.
+- Add padding and stride in convolutional layer.
+- Understanding Impact Learning Rate in Neural Network.
+- Dropout Regularization in Deep Learning.
+
 ## ⚡💧☃️ References ☃️💧⚡ 
 
 [1] https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
