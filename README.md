@@ -12,6 +12,8 @@ CNN are very similar to ordinary Neural Networks from the previous chapter: they
 
 The difference is CNN architectures make the explicit assumption that the inputs are images, which allows us to encode certain properties into the architecture. These then make the forward function more efficient to implement and vastly reduce the amount of parameters in the network.
 
+<p align="center">
+  
 ![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/1cd62f84-ea6e-4bf2-9cc7-bd1945361d08)
 
 ## ⚡💧☃️ Contents ☃️💧⚡ 
