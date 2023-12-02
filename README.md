@@ -105,6 +105,36 @@ for fn in uploaded.keys():
 ![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/9e190453-ab6f-4c1c-9b9d-0352d331794c)
 
 
+## ⚡💧☃️ Training and Validation Accuracy ☃️💧⚡ 
+Code calculate the Training and Validation Accuracy
+```
+plt.figure(figsize=(16,6))
+plt.plot(history.history['accuracy'], label='Training accuracy')
+plt.plot(history.history['val_accuracy'], label='Validation accuracy')
+plt.title('Training and Validation Accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(loc='best')
+plt.show()
+```
+![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/3ae3ae9d-75ce-4f75-ae5a-8fea2fd299fd)
+
+## ⚡💧☃️ Training and Validation Loss ☃️💧⚡ 
+Code calculate the Training and Validation Loss
+```
+plt.figure(figsize=(16,6))
+plt.plot(history.history['loss'], label='Training loss')
+plt.plot(history.history['val_loss'], label='Validation loss')
+plt.title('Training and Validation Loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(loc='best')
+plt.show()
+```
+
+![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/2048c288-126b-45aa-b497-4a7c7aef7d68)
+
+
 ## ⚡💧☃️ Model Evaluation ☃️💧⚡ 
 We use accuracy for our metrics. 
 | Metrics | Training Score | Validation Score |
