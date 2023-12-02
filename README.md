@@ -34,6 +34,77 @@ ImageDataGenerator is used for data train and data validation. We can use ImageD
 ## ⚡💧☃️ Create CNN Model and Model Training ☃️💧⚡ 
 For CNN model, we will define the convolutional layer and Pooling layer. We also create callbacks to stop training process when desired model accuracy is achieved.
 
+## ⚡💧☃️ Making Prediction Rock ☃️💧⚡ 
+After creating the model, we will predict the class of a new image
+
+```
+print(train_generator.class_indices)
+```
+
+predict new image based on created model
+
+```
+uploaded = files.upload()
+
+for fn in uploaded.keys():
+
+  predicting images
+  path = fn
+  img = image.load_img(path, target_size=(150,150))
+
+  imgplot = plt.imshow(img)
+  x = image.img_to_array(img)
+  x = np.expand_dims(x, axis=0)
+  images = np.vstack([x])
+
+  classes = model.predict(images, batch_size=10)
+  outclass = np.argmax(classes)
+
+  print(fn)
+  if outclass==0:
+    print('This is a paper hand gesture')
+  elif outclass==1:
+    print('This is a rock hand gesture')
+  else:
+    print('This is a scissors hand gesture')
+```
+
+![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/5efc07c9-8c09-4840-b12b-810b320cc165)
+
+## ⚡💧☃️ Making Prediction Scissors ☃️💧⚡ 
+After creating the model, we will predict the class of a new image
+
+predict new image based on created model
+
+```
+uploaded = files.upload()
+
+for fn in uploaded.keys():
+
+  predicting images
+  path = fn
+  img = image.load_img(path, target_size=(150,150))
+
+  imgplot = plt.imshow(img)
+  x = image.img_to_array(img)
+  x = np.expand_dims(x, axis=0)
+  images = np.vstack([x])
+
+  classes = model.predict(images, batch_size=10)
+  outclass = np.argmax(classes)
+
+  print(fn)
+  if outclass==0:
+    print('This is a paper hand gesture')
+  elif outclass==1:
+    print('This is a rock hand gesture')
+  else:
+    print('This is a scissors hand gesture')
+```
+
+![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/9e190453-ab6f-4c1c-9b9d-0352d331794c)
+
+
 ## ⚡💧☃️ Model Evaluation ☃️💧⚡ 
 We use accuracy for our metrics. 
 | Metrics | Training Score | Validation Score |
