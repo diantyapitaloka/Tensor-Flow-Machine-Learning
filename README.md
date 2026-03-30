@@ -3,6 +3,7 @@
 - The images were captured as part of a hobby project where I developped a Rock-Paper-Scissors game using computer vision and machine learning on the Raspberry Pi
 - The dataset was curated using a Pi Camera to capture diverse hand gestures against various backgrounds. Each image was then resized and normalized to ensure consistent input dimensions for the neural network.
 - A Lightweight Convolutional Neural Network (CNN) was chosen to provide high accuracy without taxing the Pi’s CPU. You likely utilized MobileNetV2 or a custom bottleneck architecture to maintain a high frame rate during inference.
+- The training phase involved using ImageDataGenerator for real-time data augmentation to prevent overfitting. This allowed the model to recognize hands at different angles, distances, and lighting conditions.
 - The model was trained to classify images into three distinct classes: Rock, Paper, and Scissors. One-hot encoding was applied to the labels to help the categorical cross-entropy loss function optimize the training process.
 
 ![image](https://github.com/diantyapitaloka/Tensor-Flow-Machine-Learning/assets/147487436/f0b834a3-7dbb-46d7-8822-9c04fc18eba6)
