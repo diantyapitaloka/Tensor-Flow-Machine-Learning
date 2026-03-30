@@ -3,6 +3,7 @@
 - The images were captured as part of a hobby project where I developped a Rock-Paper-Scissors game using computer vision and machine learning on the Raspberry Pi
 - The dataset was curated using a Pi Camera to capture diverse hand gestures against various backgrounds. Each image was then resized and normalized to ensure consistent input dimensions for the neural network.
 - A Lightweight Convolutional Neural Network (CNN) was chosen to provide high accuracy without taxing the Pi’s CPU. You likely utilized MobileNetV2 or a custom bottleneck architecture to maintain a high frame rate during inference.
+- The system triggers a "3-2-1" countdown before capturing a frame to compare the user's gesture against a randomly generated move from the AI. The final result is determined by standard game rules and displayed through a graphical user interface.
 - The Raspberry Pi 4 serves as the central hub, interfacing with the camera module via the CSI port. Python scripts utilize the OpenCV library to capture the video stream and overlay the model's predictions on the screen.
 - To run efficiently on the Raspberry Pi, the standard Keras model was converted into a .tflite format. This conversion process often involves quantization to reduce the model size and speed up execution on edge devices.
 - Validation accuracy and loss curves were monitored to ensure the model generalized well to unseen hands. A confusion matrix was likely used to identify if the model struggled to differentiate between similar gestures like Rock and Paper.
