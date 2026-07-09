@@ -48,6 +48,7 @@
 - The Raspberry Pi 4 serves as the central hub, interfacing with the camera module via the CSI port. Python scripts utilize the OpenCV library to capture the video stream and overlay the model's predictions on the screen.
 - To run efficiently on the Raspberry Pi, the standard Keras model was converted into a .tflite format. This conversion process often involves quantization to reduce the model size and speed up execution on edge devices.
 - Validation accuracy and loss curves were monitored to ensure the model generalized well to unseen hands. A confusion matrix was likely used to identify if the model struggled to differentiate between similar gestures like Rock and Paper.
+- Custom CNN Architecture Selection: A lightweight Convolutional Neural Network (CNN) architecture, such as MobileNetV2 or a custom sequential model with alternating Conv2D and MaxPooling2D layers, was selected to balance feature extraction capabilities with low computational overhead.
 - The training phase involved using ImageDataGenerator for real-time data augmentation to prevent overfitting. This allowed the model to recognize hands at different angles, distances, and lighting conditions.
 - The model was trained to classify images into three distinct classes: Rock, Paper, and Scissors. One-hot encoding was applied to the labels to help the categorical cross-entropy loss function optimize the training process.
 
