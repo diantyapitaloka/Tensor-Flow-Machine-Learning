@@ -2,7 +2,7 @@
 - This dataset contains images of hand gestures from the Rock-Paper-Scissors game.
 - The images were captured as part of a hobby project where I developped a Rock-Paper-Scissors game using computer vision and machine learning on the Raspberry Pi
 - The dataset was curated using a Pi Camera to capture diverse hand gestures against various backgrounds. Each image was then resized and normalized to ensure consistent input dimensions for the neural network.
-- A Lightweight Convolutional Neural Network (CNN) was chosen to provide high accuracy without taxing the Pi’s CPU. You likely utilized MobileNetV2 or a custom bottleneck architecture to maintain a high frame rate during inference.
+- A Lightweight Convolutional Neural Network (CNN) was chosen to provide high accuracy without taxing the Pi’s CPU. You likely utilized MobileNetV2 or custom bottleneck architecture to maintain a high frame rate during inference.
 - A simple versioning system was established to track which specific augmentations and "edge case" images were added to each training iteration. This allowed for easy rollbacks to previous model versions if a new batch of data introduced unexpected bias or reduced the F1-score.
 - The images were captured as part of a hobby project where I developped a Rock-Paper-Scissors game using computer vision and machine learning on the Raspberry Pi.
 - The input pipeline included a rescaling layer to map pixel values from $[0, 255]$ to a range of $[-1, 1]$ or $[0, 1]$. This is to normalization ensured that the gradient descent process remained stable and converged more faster by keeping the input features on a similar scale.
